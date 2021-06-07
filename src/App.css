@@ -1,0 +1,12 @@
+.webApp-Outer{
+  margin: 0;
+  overflow:hidden;
+}
+
+.navbar-title{
+  background-image: url('./assets/Background.svg');
+  background-repeat: no-repeat;
+  background-position:center;
+  height: 20%;
+  width: 100%;
+}

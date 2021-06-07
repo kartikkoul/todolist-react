@@ -1,0 +1,14 @@
+.todosFrameOuter{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.todosFrame{
+    width: 1200px;
+    height: 270px;
+    margin: 0% 0% 0% 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}

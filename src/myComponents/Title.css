@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+.titleArea{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 2%;
+    width: 100%;
+}
+
+.titleArea h1{
+    font-family: 'Rancho', cursive;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 60px;
+    padding-bottom: 15%;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.titleLeftImage{
+    height: 60%;
+    margin-left: 10%;
+    position: relative;
+}
+
+.titleRightImage{
+    height: 60%;
+    margin-right: 10%;
+}

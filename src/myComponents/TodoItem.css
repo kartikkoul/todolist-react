@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.itemCard{
+    width: 3300px;
+    height: max-content;
+    box-shadow: 0px 0px 3px 3px rgba(34, 34, 34, 0.247);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.cardInner{
+    padding: 10px;
+}
+
+.cardInner .topArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardInner .title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    width: 50%;
+    text-align: center;
+}
+
+.cardInner .timeline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.cardInner .date{
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+
+.cardInner .time{
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+
+.cardInner .description{
+    font-family: 'Lato', sans-serif;
+    padding: 2px;
+    margin-top: 6px;
+    text-align: left;
+}
+
+.cardInner .buttonArea{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cardInner .buttonArea .customBtn{
+    margin: 4px;
+    width: 64px;
+    height: 33px;
+    border-radius: 6px;
+    border: 0px;
+    transition: 300ms;
+}
+
+.cardInner .buttonArea .done{
+    background-color: #4DD637;
+    border: 1px solid #4DD637;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cardInner .buttonArea .done:hover{
+    cursor: pointer;
+    background-color: #4cd63700;
+    color: #4DD637;
+}
+
+/* #D82E2F */
+
+.cardInner .buttonArea .delete{
+    background-color: #d82e2e00 ;
+    border: 1px solid #D82E2F;
+    color: #D82E2F;
+    font-weight: 600;
+}
+
+.cardInner .buttonArea .delete:hover{
+    cursor: pointer;
+    background-color: #D82E2F;
+    color: #fff;
+}
