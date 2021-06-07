@@ -4,20 +4,28 @@ import {Container} from 'react-bootstrap'
 import TodoItem from './TodoItem'
 
 const Todos = (props) => {
+
+    
     return (
         <Container>
+
+            <div className="handleTodos">
+                <button className="add ">Add</button>
+                <a href="" className="deleteAll">Delete All</a>
+            </div>
+
             <div className="todosFrameOuter">
                 <div className='todosFrame'>
 
-                    {props.todo.map(
+                    {props.todo.length===0?'No Important Tasks For Now!!':props.todo.map(
                         (item) => {
                             return (
-                                <>
                                     <TodoItem todoItem={item} key={item.sno} onDelete={props.onDelete}/>
-                                </>
                             )
                         }
                     )}
+
+                    
 
                     
                 </div>

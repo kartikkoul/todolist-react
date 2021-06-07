@@ -25,10 +25,10 @@ const TodoItem = ({todoItem, onDelete}) => {
                 </div>
 
                 <div className="buttonArea">
-                    <button className="done customBtn" onClick={onDelete}>
+                    <button className="done customBtn" onClick={() => {onDelete(todoItem)}}>
                         Done
                     </button>
-                    <button className="delete customBtn" onClick={onDelete}>
+                    <button className="delete customBtn" onClick={() => {onDelete(todoItem)}}>
                         Delete
                     </button>
                 </div>

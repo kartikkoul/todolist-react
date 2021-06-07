@@ -2,36 +2,51 @@ import './App.css';
 import Header from './myComponents/Header';
 import Title from './myComponents/Title';
 import Todos from './myComponents/Todos'
+import { useState } from 'react'
 
 function App() {
 
   const onDelete = (todo) => {
     console.log('OnDelete Works', todo)
+
+    // Deleting this way in react doesnt work 
+    // let index = todo.indexOf(todo);
+    // todo.splice(index, 1)
+
+    setTodo(
+      todo.filter(
+        (e) => {
+          return e!==todo;
+        }
+      )
+    );
   }
 
-  let todo = [
-      {
-          sno : 1,
-          title : 'Update the client',
-          date : '23/11/1999',
-          time : '22:22',
-          description : 'Update the client about the development and the new feature.'
-      },
-      {
-          sno : 2,
-          title : 'Team coding',
-          date : '23/11/1999',
-          time : '22:22',
-          description : 'Meeting with team at 7AM and gotta develop the new component by tonight'
-      },
-      {
-          sno : 3,
-          title : 'Update the client',
-          date : '23/11/1999',
-          time : '22:22',
-          description : 'Update the client about the development and the new feature'
-      }
-  ]
+  var [todo, setTodo] = useState([
+    {
+        sno : 1,
+        title : 'Update the client',
+        date : '23/11/1999',
+        time : '22:22',
+        description : 'Update the client about the development and the new feature.'
+    },
+    {
+        sno : 2,
+        title : 'Team coding',
+        date : '23/11/1999',
+        time : '22:22',
+        description : 'Meeting with team at 7AM and gotta develop the new component by tonight'
+    },
+    {
+        sno : 3,
+        title : 'Exercise',
+        date : '23/11/1999',
+        time : '22:22',
+        description : 'Go to exercise, today is Biceps game'
+    }
+  ])
+  
+  
 
 
   return (
@@ -46,7 +61,10 @@ function App() {
           </div>
         </div>
 
-        <Todos todo={todo} onDelete={onDelete}/>
+        <div className="midSection">
+          <Todos todo={todo} onDelete={onDelete}/>
+        </div>
+        
         
       </div>
     </div>

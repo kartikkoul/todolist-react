@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 .itemCard{
-    width: 3300px;
+    width: 95%;
     height: max-content;
     box-shadow: 0px 0px 3px 3px rgba(34, 34, 34, 0.247);
     border-radius: 6px;
     overflow: hidden;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 1%;
 }
 
 .cardInner{
@@ -23,9 +22,10 @@
 .cardInner .title{
     font-family: 'Lato', sans-serif;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 13px;
     width: 50%;
     text-align: center;
+    color: #222;
 }
 
 .cardInner .timeline{
@@ -49,10 +49,12 @@
 
 .cardInner .description{
     font-family: 'Lato', sans-serif;
+    color: #222;
     padding: 2px;
+    font-size: 14px;
     margin-top: 6px;
     text-align: left;
-}
+} 
 
 .cardInner .buttonArea{
     margin-top: 15px;
