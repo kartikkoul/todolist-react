@@ -6,20 +6,17 @@ import { useState } from 'react'
 
 function App() {
 
-  const onDelete = (todo) => {
-    console.log('OnDelete Works', todo)
+  const onDelete = (e) => {
 
     // Deleting this way in react doesnt work 
     // let index = todo.indexOf(todo);
     // todo.splice(index, 1)
 
     setTodo(
-      todo.filter(
-        (e) => {
-          return e!==todo;
-        }
-      )
-    );
+        todo.filter((todo) => {
+          return e!==todo
+        })
+    )
   }
 
   var [todo, setTodo] = useState([
