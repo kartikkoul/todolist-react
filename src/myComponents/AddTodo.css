@@ -1,0 +1,10 @@
+.addTodoOuter{
+    width: 100%;
+    position: fixed;
+}
+
+.addTodoInner{
+    background-color: #fff;
+    width: 60%;
+    margin: 20%;
+}

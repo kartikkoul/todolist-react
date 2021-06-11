@@ -55,6 +55,9 @@ function App() {
   return (
     <div className="webApp-Outer">
       <div className="webApp-Inner">
+        <div className="addTodoPopup">
+            <AddTodo/>
+        </div> 
         <div className="navbar-title">
           <div className="navbar">
             <Header item1 = 'Todo' item2 ='About'/>
@@ -62,13 +65,13 @@ function App() {
           <div className="titleOuter">
             <Title title='Kya Karneka Hai Bhidu?'/>
           </div>
-        </div>
+        </div>   
 
         <div className="midSection">
           <Todos todo={todo} onDelete={onDelete} onDeleteAll={onDeleteAll} />
         </div>
 
-        
+            
 
       </div>
       {/* <footer>
