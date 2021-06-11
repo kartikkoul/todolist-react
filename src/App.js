@@ -2,6 +2,8 @@ import './App.css';
 import Header from './myComponents/Header';
 import Title from './myComponents/Title';
 import Todos from './myComponents/Todos'
+import Footer from './myComponents/Footer';
+import AddTodo from './myComponents/AddTodo'
 import { useState } from 'react'
 
 function App() {
@@ -17,6 +19,10 @@ function App() {
           return e!==todo
         })
     )
+  }
+
+  const onDeleteAll = () => {
+    return setTodo([])
   }
 
   var [todo, setTodo] = useState([
@@ -59,11 +65,17 @@ function App() {
         </div>
 
         <div className="midSection">
-          <Todos todo={todo} onDelete={onDelete}/>
+          <Todos todo={todo} onDelete={onDelete} onDeleteAll={onDeleteAll} />
         </div>
+
         
-        
+
       </div>
+      {/* <footer>
+        <div className='footerArea'>
+          <Footer/>
+        </div>
+      </footer> */}
     </div>
   );
 }

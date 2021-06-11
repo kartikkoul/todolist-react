@@ -11,7 +11,7 @@ const Todos = (props) => {
 
             <div className="handleTodos">
                 <button className="add ">Add</button>
-                <a href="" className="deleteAll">Delete All</a>
+                <span className="deleteAll" onClick={props.onDeleteAll}>Delete All</span>
             </div>
 
             <div className="todosFrameOuter">

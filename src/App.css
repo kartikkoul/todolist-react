@@ -1,9 +1,11 @@
 .webApp-Outer{
   margin: 0;
+  height: max-content;
 }
 
 .webApp-Inner{
   width: 100%;
+  height: max-content;
 }
 
 
@@ -16,5 +18,11 @@
 }
 
 .midSection{
+  width: 100%;
+}
+
+footer{
+  position: absolute;
+  top: 100vh;
   width: 100%;
 }

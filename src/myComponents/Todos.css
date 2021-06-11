@@ -33,6 +33,14 @@
     font-family: 'Lato', sans-serif;
     font-size: 13px;
     padding: 4px;
+    color:  #1074c0;
+    transition: 200ms;
+    text-decoration: underline;
+}
+
+.handleTodos .deleteAll:hover{
+    cursor: pointer;
+    color: #0b5791;
 }
 
 .todosFrame{
