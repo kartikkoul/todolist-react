@@ -8,7 +8,7 @@ import { useState } from 'react'
 
 function App() {
 
-  const onDelete = (e) => {
+  const onDelete = (e) => { 
 
     // Deleting this way in react doesnt work 
     // let index = todo.indexOf(todo);
