@@ -55,8 +55,10 @@ function App() {
   return (
     <div className="webApp-Outer">
       <div className="webApp-Inner">
-        <div className="addTodoPopup">
-            <AddTodo/>
+        <div className="addTodoPopupOuter">
+          <div className="addTodoPopupInner">
+             <AddTodo/>
+          </div>
         </div> 
         <div className="navbar-title">
           <div className="navbar">
