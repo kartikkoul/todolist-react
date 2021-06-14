@@ -22,5 +22,5 @@ const AddTodo = () => {
         </div>
     )
 }
-
+ 
 export default AddTodo
