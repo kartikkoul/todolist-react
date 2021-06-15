@@ -6,9 +6,9 @@ import Footer from './myComponents/Footer';
 import AddTodo from './myComponents/AddTodo'
 import { useState } from 'react'
 
-function App() {
+function App() { 
 
-  const onDelete = (e) => { 
+  const onDelete = (e) => {
 
     // Deleting this way in react doesnt work 
     // let index = todo.indexOf(todo);
@@ -55,10 +55,8 @@ function App() {
   return (
     <div className="webApp-Outer">
       <div className="webApp-Inner">
-        <div className="addTodoPopupOuter">
-          <div className="addTodoPopupInner">
-             <AddTodo/>
-          </div>
+        <div className="addTodoPopup">
+            <AddTodo/>
         </div> 
         <div className="navbar-title">
           <div className="navbar">
