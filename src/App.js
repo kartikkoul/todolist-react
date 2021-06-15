@@ -6,7 +6,7 @@ import Footer from './myComponents/Footer';
 import AddTodo from './myComponents/AddTodo'
 import { useState } from 'react'
 
-function App() {
+function App() { 
 
   const onDelete = (e) => {
 
